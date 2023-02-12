@@ -1,0 +1,14 @@
+extends layout
+  
+block main-content 
+  h1.page-title Welcome to Darsh Developer 
+  .services-container
+    h2.page-service Services 
+    p.service-description Darsh Developer is an IT company that offers a wide range of services, including budget-friendly Website Design, Website Hosting, Social Media Marketing, and Photography and Videography. The company provides top-notch services in each of these areas to help businesses establish their online presence and connect with their target audience.
+    .service-type
+      each d in data
+        .serivce-item 
+            h3 #{d.name}
+            img(src=d.imagepath, alt="", width="250px", height="250px")
+            p #{d.description}
+        

@@ -1,0 +1,26 @@
+block variables 
+doctype html 
+html
+  head 
+    meta(charset="utf-8")
+    title #{title} | Darsh Developer
+    block scripts  
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header#header 
+      .header-content 
+        h2#site-name
+          a(href="/") Darsh Developer
+        nav#main-navigation
+          ul
+            li 
+              a(href="/") Home
+            li 
+              a(href="/about") About
+            li 
+              a(href="/contact") Contact
+    main#main
+      img(src="/img/", alt="", srcset="")
+    block main-content
+    footer#footer
+      p &copy; Harshadkumar Patel, 2023. 

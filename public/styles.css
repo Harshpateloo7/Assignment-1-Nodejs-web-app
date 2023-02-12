@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{ 
+  margin: 3em;
+  font-family: 'Poppins', sans-serif;
+}
+#header{
+  display: flex;
+  width: 100%;
+  background-color:#010203;
+}
+.header-content{
+  justify-content: space-between;
+  width: 100%;
+}
+.header-content,#main-navigation{
+  display: flex;
+}
+h2#site-name, a{
+  text-decoration: none;
+  color: white;
+} 
+ul{
+  display: flex;
+  margin: 25px;
+  list-style-type: none;
+} 
+ul, li,a{
+  margin: 15px;
+}
+ul li{
+  float: right;
+}
+h1.page-title {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+h2.page-service {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 40px;
+}
+h3{
+  margin-top: -40px;
+}
+p.service-description {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.service-type{
+  text-align: center;
+  display: flex;
+  column-gap: 15px;
+}
+.services-container {
+  border: 1px solid black;
+  padding: 50px;
+  background-color: antiquewhite;
+  border-radius: 6px;
+}
+p.aboutus {
+  text-align: center;
+  margin: 84px;
+}
+.about-container{
+  border: 1px solid black;
+  padding: 50px;
+  background-color: antiquewhite;
+  border-radius: 6px;
+}
+.form-container{
+  border: 1px solid black;
+  padding: 50px;
+  background-color: antiquewhite;
+  border-radius: 6px;
+}
+input[type=text],input[type=email],select,textarea{
+  width: 100%;
+  resize: vertical;
+}
+input[type=submit]{
+  background-color: #010203;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: green;
+}
+#footer{
+  text-align: center;
+  margin-top: 100px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+@media only screen and (max-width: 768px){
+  .service-type {
+    text-align: center;
+    display: inline-grid;
+    row-gap: 44px;
+  }
+} 
+

@@ -30,7 +30,6 @@ app.get("/about", (request, response) => {
 });
 app.get("/contact",(request, response)=>{
   response.render("contact",{ title:"Contact"});
-
 });
 
 //Setup server listning
